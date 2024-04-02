@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
 import axios from 'axios';
@@ -29,7 +29,7 @@ const CreateBooks = () => {
       })
       .catch((error) => {
         setLoading(false);
-        // alert('An error happened. Please Chack console');
+        // alert('An error happened. Please Check console');
         enqueueSnackbar('Error', { variant: 'error' });
         console.log(error);
       });
